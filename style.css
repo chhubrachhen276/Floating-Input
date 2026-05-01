@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box ;
+    font-family: sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inputBox{
+    position: relative;
+
+}
+.inputBox input{
+    width: 230px;
+    padding: 17px 13px;
+    border: 1px solid blue;
+    outline: none;
+    border-radius: 14px;
+}
+.inputBox label{
+    position: absolute;
+    top: 15px;
+    left: 13px;
+    color: black;
+    transition: 0.3s;
+    pointer-events: none;
+
+}
+.inputBox input:focus + label,
+.inputBox input:valid + label{
+    top: -10px;
+    color: white;
+    background: black;
+    padding: 2px 8px;
+    border-radius: 13px;
+    font-size: 15px;
+
+}
